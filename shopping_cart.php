@@ -1,5 +1,5 @@
 <?php
-include './cart_item.php';
+require_once './cart_item.php';
 
 class ShoppingCart {
     public $products;

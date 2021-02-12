@@ -1,5 +1,5 @@
 <?php
-include './product.php';
+require_once './product.php';
 
 class CartItem extends Product{
     private $quantity = 0;

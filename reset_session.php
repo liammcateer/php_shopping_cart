@@ -1,7 +1,3 @@
-<?php 
-session_start();
-
-session_unset();
-session_destroy();
-
-echo "Session Reset.";
+<?php
+setcookie("shopping_cart", "", time() - 3600, "/");
+echo "Cart Reset.";

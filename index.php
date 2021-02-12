@@ -1,6 +1,6 @@
 <?php
-include './session.php';
-include './products.php';
+require_once './session.php';
+require_once './products.php';
 
 ?>
 
@@ -16,7 +16,7 @@ include './products.php';
     <h1>Php Shopping Cart</h1>
     <h3>Cart</h3>
     <?php
-        $cart = unserialize($_SESSION['shopping_cart']);
+        $cart = unserialize($_COOKIE['shopping_cart']);
         foreach($cart->products as $cart_item){
             $total_price = number_format($cart_item->get_total_price(), 2);
             $quantity = $cart_item->get_quantity();
