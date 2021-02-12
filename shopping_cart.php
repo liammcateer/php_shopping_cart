@@ -4,7 +4,6 @@ require_once './cart_item.php';
 class ShoppingCart {
     public $products;
     public $total_price;
-    public $count;
 
     public function __construct(){
         $this->products = [];
