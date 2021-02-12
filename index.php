@@ -69,7 +69,8 @@ require_once './products.php';
                     ";
                 }
             }
-            echo "<div class='grand-total'><br><br>Grand Total: <strong>\$$grand_total</strong>
+            $grand_total_format = number_format($grand_total, 2);
+            echo "<div class='grand-total'><br><br>Grand Total: <strong>\$$grand_total_format</strong>
                     <br><br>
                     <a href='./reset_cart.php'>Reset cart</a>
                 </div>";
