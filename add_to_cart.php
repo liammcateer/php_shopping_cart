@@ -1,5 +1,5 @@
 <?php 
-require_once './session.php';
+require_once './cookie.php';
 
 $cart = unserialize($_COOKIE['shopping_cart']);
 $cart->add_product($_GET['name'], $_GET['price'], $_GET['quantity']);

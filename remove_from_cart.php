@@ -1,6 +1,6 @@
 <?php
 
-require_once './session.php';
+require_once './cookie.php';
 
 $cart = unserialize($_COOKIE['shopping_cart']);
 $cart->remove_product($_GET['name'], $_GET['quantity']);

@@ -1,5 +1,5 @@
 <?php
-require_once './session.php';
+require_once './cookie.php';
 require_once './products.php';
 
 ?>
